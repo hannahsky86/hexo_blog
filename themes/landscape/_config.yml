@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  Store: /store
 rss: /atom.xml
 
 # Content
@@ -13,7 +14,7 @@ sidebar: right
 widgets:
 - category
 - tag
-- tagcloud
+# - tagcloud
 - archive
 - recent_posts
 
@@ -28,10 +29,13 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-54324132-2
 gauges_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+snipcart_api_key: MWUxYWQ5MWQtOWQxMS00OWJkLTk5ZjAtOGRjNGI2YjY4YjE1NjM3MTAzMjY2NjM5MzAyMTA2
+#  ODkyZDNlZWMtMGNlMS00YzBhLWE3M2ItYTliYTlmY2QxNDlkNjM3MTAzMjY2NjM5MzAyMTA2

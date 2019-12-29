@@ -1,4 +1,11 @@
+
+
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <% if (config.snipcart_api_key) { %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="<%- config.snipcart_api_key %>"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+  <% } %>
   <div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
@@ -10,6 +17,7 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
+    <script src="//rum-static.pingdom.net/pa-5dc236b505a241000800078f.js" async></script>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
@@ -21,15 +29,48 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
+        <% if (post.product) { %>
+          <% if (post.product.show_image) { %>
+            <img src="<%- post.product.image %>" width="30%"/>
+          <% } %> 
+          <div class="buy-button-position" itemprop="articleBuy">
+            <button class="snipcart-add-item buy-now"
+              data-item-id="<%- post.product.id %>"
+              data-item-name="<%- post.product.name %>"
+              data-item-price="<%- post.product.price %>"
+              data-item-image="<%- post.product.image %>"
+              data-item-url="<%- post.permalink %>"><%- post.product.description %></button>
+          </div>
+        <% } %> 
     </div>
+  <br>
+  <br>
+  </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
+      <a data-url="<%- post.permalink %>" 
+        data-id="<%= post._id %>" 
+        class="article-share-link"><%= __('share') %></a>
+
+        <div id="graphcomment"></div>
+        <script type="text/javascript" >
+          window.gc_params = {
+            graphcomment_id: 'https-hannahsky86-herokuapp-com',
+            fixed_header_height: 0,
+          };
+          (function() {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+          })();
+        </script>
+
+      <!-- <% if (post.comments && config.disqus_shortname){ %>
+        <a href="<%- post.permalink %>#disqus_thread" 
+          class="article-comment-link">
+          <%= __('comment') %></a>
+      <% } %> -->
       <%- partial('post/tag') %>
     </footer>
-  </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
@@ -38,7 +79,10 @@
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the 
+      <a href="//disqus.com/?ref_noscript">
+        comments powered by Disqus.</a>
+      </noscript>
   </div>
 </section>
 <% } %>

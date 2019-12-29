@@ -1,3 +1,6 @@
+import commentBox from 'commentbox.io';
+commentBox('my-project-id');
+
 module.exports = function(grunt){
   grunt.initConfig({
     gitclone: {

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript"
+  id="snipcart"
+  data-api-key="MWUxYWQ5MWQtOWQxMS00OWJkLTk5ZjAtOGRjNGI2YjY4YjE1NjM3MTAzMjY2NjM5MzAyMTA2"
+  src="https://cdn.snipcart.com/scripts/snipcart.js">
+  </script>
+  <%- autoCanonical(config, page) %>
   <meta charset="utf-8">
   <%- partial('google-analytics') %>
   <%
@@ -33,4 +39,5 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
   <%- css('css/style') %>
+
 </head>

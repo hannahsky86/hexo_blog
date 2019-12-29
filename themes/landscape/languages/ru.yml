@@ -1,7 +1,7 @@
 categories: Категории
 search: Поиск
 tags: Метки
-tagcloud: Облако меток
+# tagcloud: Облако меток
 tweets: Твиты
 prev: Назад
 next: Вперед

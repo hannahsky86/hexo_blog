@@ -1,13 +1,15 @@
 categories: Catégories
 search: Rechercher
 tags: Mot-clés
-tagcloud: Nuage de mot-clés
+# tagcloud: Nuage de mot-clés
 tweets: Tweets
 prev: Précédent
 next: Suivant
 comment: Commentaires
 archive_a: Archives
 archive_b: "Archives: %s"
+store_a: Store
+store_b: "Store: %s"
 page: Page %d
 recent_posts: Articles récents
 newer: Récent

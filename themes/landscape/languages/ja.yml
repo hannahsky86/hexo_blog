@@ -1,7 +1,7 @@
 categories: カテゴリ
 search: 検索
 tags: タグ
-tagcloud: タグクラウド
+# tagcloud: タグクラウド
 tweets: ツイート
 prev: 戻る
 next: 次へ
