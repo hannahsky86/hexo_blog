@@ -25,6 +25,7 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
+stire_dir: store
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -48,8 +49,6 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace: ''
-  wrap: true
-  hljs: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -112,6 +111,7 @@ sitemap:
     path: sitemap.xml
     tag: true
     category: true
+
 
 snipcart_api_key: MWUxYWQ5MWQtOWQxMS00OWJkLTk5ZjAtOGRjNGI2YjY4YjE1NjM3MTAzMjY2NjM5MzAyMTA2
   
