@@ -1,0 +1,44 @@
+
+
+
+** FIX Major problem with site 
+Fix problems with tags
+
+- Make outline for video series
+- Record videos of projects
+
+- Add store page to blog 
+- Setup subscription feature
+- Setup Google adds 
+- Go through old pages and check formatting 
+- Learn more about shipping and taxes
+
+
+https://developers.google.com/speed/pagespeed/insights
+https://search.google.com/search-console
+
+Learn more about SEO 
+Study these pages:
+https://www.seomechanic.com/how-to-perform-seo-audit/
+https://www.seomechanic.com/why-is-my-website-not-showing-in-google-search-results/
+https://buttercms.com/blog/a-complete-dead-simple-guide-to-seo-for-static-site-generators
+ 
+
+
+Title tag
+Meta description 
+Make title the URL 
+Get other pages to link to website
+    - Forms
+    - Directories
+    - Other blogs
+
+Titles that reflect helpfulness 
+Stop displaying post dates
+The buffet title for generic searches
+Break huge posts into smaller posts
+Format titles as statements rather than questions
+Start website with small posts
+Focus on specific questions 
+
+https://www.youtube.com/watch?v=6Jga1tbzoBws
