@@ -1,10 +1,8 @@
-
-
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <% if (config.snipcart_api_key) { %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="<%- config.snipcart_api_key %>"></script>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <!-- <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="<%- config.snipcart_api_key %>"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" /> -->
   <% } %>
   <div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
@@ -17,7 +15,7 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
-    <script src="//rum-static.pingdom.net/pa-5dc236b505a241000800078f.js" async></script>
+    <!-- <script src="//rum-static.pingdom.net/pa-5dc236b505a241000800078f.js" async></script> -->
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
@@ -76,13 +74,13 @@
   <% } %>
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
+<!-- <% if (!index && post.comments && config.disqus_shortname){ %> -->
+<!-- <section id="comments">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the 
       <a href="//disqus.com/?ref_noscript">
         comments powered by Disqus.</a>
       </noscript>
   </div>
-</section>
-<% } %>
+</section> -->
+<!-- <% } %> -->
