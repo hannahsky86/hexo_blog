@@ -15,6 +15,15 @@ My solution to <strong>[Between Two Sets](https://www.hackerrank.com/challenges/
 
 Note: This code ([Python](https://www.python.org/)) passed all of the tests, but I'm pretty sure there are better ways to solve this problem. Feel free to comment and offer suggestions. Also, the HackerRank didn't allow me to import [numpy](https://numpy.org/).
 
+<blockquote cite="https://www.hackerrank.com/challenges/between-two-sets/problem">
+<p>You will be given two arrays of integers and asked to determine all integers that satisfy the following two conditions:
+
+The elements of the first array are all factors of the integer being considered
+The integer being considered is a factor of all elements of the second array
+These numbers are referred to as being between the two arrays. You must determine how many such numbers exist.
+[...](https://www.hackerrank.com/challenges/between-two-sets/problem)</p>
+</blockquote>
+
 "You will be given two arrays of integers and asked to determine all integers that satisfy the following two conditions:
 
 The elements of the first array are all factors of the integer being considered
