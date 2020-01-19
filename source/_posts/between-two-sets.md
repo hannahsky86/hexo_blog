@@ -1,5 +1,6 @@
 ---
 title: HackerRank - Between Two Sets 
+date: 2020-01-18 10:38:43
 tags:
 - HackerRank
 ---
@@ -14,7 +15,6 @@ tags:
 
 <strong>Note:</strong> This code ([Python](https://www.python.org/)) passed all of the tests, but I'm pretty sure there are better ways to solve this problem. Feel free to comment and offer suggestions. Also, the HackerRank didn't allow me to import [numpy](https://numpy.org/).
 
-<br>
 
 <strong><i>"You will be given two arrays of integers and asked to determine all integers that satisfy the following two conditions:
 
