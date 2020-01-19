@@ -1,6 +1,6 @@
 ---
 title: HackerRank - Between Two Sets 
-date: 2020-01-20 10:38:43
+date: 
 tags:
 - HackerRank
 ---
