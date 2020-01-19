@@ -9,8 +9,17 @@ tags:
 <br>
  
 
-<h4>My solution to <a href="https://www.hackerrank.com/challenges/between-two-sets/problem">Between Two Sets</a></h4>
+<h4>My <a href="https://www.hackerrank.com/challenges/between-two-sets/problem">HackerRank</a> solution to:</h4>
 
+<ul>
+<li> <a href = "#BetweenTwoSets">Between Two Sets</a></li>
+<li> <a href = "#BreakingTheRecords">Breaking the Records</a></li>
+</ul>
+
+<br>
+<br>
+
+<h4><a id="BetweenTwoSets">My Solution to <a href="https://www.hackerrank.com/challenges/between-two-sets/problem">Between Two Sets</a></h4>
 
 
 <strong>Note:</strong> This code ([Python](https://www.python.org/)) passed all of the tests, but I'm pretty sure there are better ways to solve this problem. Feel free to comment and offer suggestions. Also, the HackerRank didn't allow me to import [numpy](https://numpy.org/).
@@ -94,8 +103,43 @@ def getTotalX(a_array, b_array):
     for i in items: 
         total+=1 if sum([b%i for b in b_array]) == 0 else 0
     return total
+
+```
+
+<br>
+<br>
+
+<h4><a id="BreakingTheRecords">My Solution to <a href="https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem">Breaking the Records</a></h4>
+
+
+<strong><i>"Maria plays college basketball and wants to go pro. Each season she maintains a record of her play. She tabulates the number of times she breaks her season record for most points and least points in a game. Points scored in the first game establish her record for the season, and she begins counting from there."</i></strong>
+
+[Continue reading...](https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem)
+
+
+<br>
+
+```
+def breakingRecords(scores):
+
+    min_score = scores[0]
+    max_score = scores[0]
+
+    cnt_min = 0
+    cnt_max = 0 
+
+    for i in range(1, len(scores)):
+        if scores[i]>max_score:
+            max_score = scores[i]
+            cnt_max+=1
+        if scores[i]<min_score:
+            min_score = scores[i]
+            cnt_min+=1
+            
+    return cnt_max, cnt_min
 ```
 
 
 <br>
 <br>
+
