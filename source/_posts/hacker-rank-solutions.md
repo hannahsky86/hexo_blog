@@ -1,5 +1,5 @@
 ---
-title: HackerRank - Between Two Sets 
+title: HackerRank Solutions
 date: 2020-01-18 10:38:43
 tags:
 - HackerRank
