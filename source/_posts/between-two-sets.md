@@ -29,21 +29,9 @@ These numbers are referred to as being between the two arrays. You must determin
 
 <br>
 
-```
-import math
-import os
-import random
-import re
-import sys
+<strong>First Solution</strong>
 
-#
-# Complete the 'getTotalX' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. INTEGER_ARRAY a
-#  2. INTEGER_ARRAY b
-#
+```
 
 def getTotalX(a_array, b_array):
 
@@ -81,26 +69,33 @@ def getTotalX(a_array, b_array):
 
     return total
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    first_multiple_input = input().rstrip().split()
-
-    n = int(first_multiple_input[0])
-
-    m = int(first_multiple_input[1])
-
-    arr = list(map(int, input().rstrip().split()))
-
-    brr = list(map(int, input().rstrip().split()))
-
-    total = getTotalX(arr, brr)
-
-    fptr.write(str(total) + '\n')
-
-    fptr.close()
-
 ```
+
+<br>
+
+<strong> Second Solution </strong>
+```
+def getTotalX(a_array, b_array):
+
+    max_a=a_array if type(a_array)==int else max(a_array)
+    min_b=b_array if type(b_array)==int else max(b_array)
+
+    items = [] 
+    x=1
+    while max_a*x<=min_b: 
+
+        if type(a_array)==int:
+            items.append(max_a*x) if (max_a*x)%a_array == 0 else 0  
+        else:
+            items.append(max_a*x) if sum([(max_a*x)%a for a in a_array]) == 0 else 0
+        x+=1
+        
+    total = 0 
+    for i in items: 
+        total+=1 if sum([b%i for b in b_array]) == 0 else 0
+    return total
+```
+
 
 <br>
 <br>
