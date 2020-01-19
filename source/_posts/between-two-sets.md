@@ -1,6 +1,5 @@
 ---
 title: HackerRank - Between Two Sets 
-date: 
 tags:
 - HackerRank
 ---
