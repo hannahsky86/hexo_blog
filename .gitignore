@@ -4,5 +4,7 @@ db.json
 *.log
 node_modules/
 public/
+source/images/*
+source/videos/*
 .deploy*/
 Other/*
