@@ -7,21 +7,25 @@ tags:
 <br>
 <br>
  
-<h4><a id="HackerRank">Code Practice with 
-<a href="https://www.hackerrank.com/dashboard">HackerRank</a></h4>
+
+<h4>My solution to <a href="https://www.hackerrank.com/challenges/between-two-sets/problem">Between Two Sets</a></h4>
 
 
-My solution to <strong>[Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets/problem)</strong>
 
-Note: This code ([Python](https://www.python.org/)) passed all of the tests, but I'm pretty sure there are better ways to solve this problem. Feel free to comment and offer suggestions. Also, the HackerRank didn't allow me to import [numpy](https://numpy.org/).
+<strong>Note:</strong> This code ([Python](https://www.python.org/)) passed all of the tests, but I'm pretty sure there are better ways to solve this problem. Feel free to comment and offer suggestions. Also, the HackerRank didn't allow me to import [numpy](https://numpy.org/).
 
-<div style = "background: #eee;" cite="https://www.hackerrank.com/challenges/between-two-sets/problem">
-You will be given two arrays of integers and asked to determine all integers that satisfy the following two conditions:
+<br>
 
-The elements of the first array are all factors of the integer being considered
+<strong><i>"You will be given two arrays of integers and asked to determine all integers that satisfy the following two conditions:
+
+The elements of the first array are all factors of the integer being considered 
+
 The integer being considered is a factor of all elements of the second array
-These numbers are referred to as being between the two arrays. You must determine how many such numbers exist.
-[...](https://www.hackerrank.com/challenges/between-two-sets/problem)
+
+These numbers are referred to as being between the two arrays. You must determine how many such numbers exist."</i></strong>
+
+[Continue reading...](https://www.hackerrank.com/challenges/between-two-sets/problem)
+
 
 <br>
 
@@ -97,7 +101,6 @@ if __name__ == '__main__':
     fptr.close()
 
 ```
-</div>
 
 <br>
 <br>
