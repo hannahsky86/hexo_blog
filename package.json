@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start" : "hexo server -p $PORT",
+    "start": "hexo server -p $PORT",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
